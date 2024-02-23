@@ -1,0 +1,522 @@
+你是一个专业的 CAD 建模专家。我将给你一段用 json 描述的某个 cad 模型的建模步骤，你需要根据这个建模过程，用清晰、简洁的自然语言提供给我一段这个模型的需求描述。
+
+以下是两个例子：
+
+例子 1:
+json 文件如下：
+       {
+ "entities": {
+  "FxUIwRDqVzDpTa4_1": {
+   "transform": {
+    "origin": {
+     "y": -0.025,
+     "x": -0.01516459,
+     "z": 0.01031765
+    },
+    "y_axis": {
+     "y": 0.0,
+     "x": -0.0,
+     "z": 1.0
+    },
+    "x_axis": {
+     "y": 0.0,
+     "x": 1.0,
+     "z": 0.0
+    },
+    "z_axis": {
+     "y": -1.0,
+     "x": 0.0,
+     "z": 0.0
+    }
+   },
+   "type": "Sketch",
+   "name": "Sketch 2",
+   "profiles": {
+    "JJC": {
+     "loops": [
+      {
+       "is_outer": true,
+       "profile_curves": [
+        {
+         "center_point": {
+          "y": 0.0,
+          "x": -0.01,
+          "z": 0.0
+         },
+         "type": "Circle3D",
+         "radius": 0.01,
+         "curve": "JJB",
+         "normal": {
+          "y": -1.0,
+          "x": 0.0,
+          "z": 0.0
+         }
+        }
+       ]
+      }
+     ],
+     "properties": {}
+    }
+   },
+   "reference_plane": {}
+  },
+  "F9uPpvVqoX57y8v_0": {
+   "transform": {
+    "origin": {
+     "y": 0.0,
+     "x": 0.0,
+     "z": 0.0
+    },
+    "y_axis": {
+     "y": 0.0,
+     "x": -0.0,
+     "z": 1.0
+    },
+    "x_axis": {
+     "y": 0.0,
+     "x": 1.0,
+     "z": 0.0
+    },
+    "z_axis": {
+     "y": -1.0,
+     "x": 0.0,
+     "z": 0.0
+    }
+   },
+   "type": "Sketch",
+   "name": "Sketch 1",
+   "profiles": {
+    "JGC": {
+     "loops": [
+      {
+       "is_outer": true,
+       "profile_curves": [
+        {
+         "type": "Line3D",
+         "start_point": {
+          "y": 0.04031765,
+          "x": -0.05516459,
+          "z": 0.0
+         },
+         "curve": "JGB",
+         "end_point": {
+          "y": 0.04031765,
+          "x": 0.02483541,
+          "z": 0.0
+         }
+        },
+        {
+         "type": "Line3D",
+         "start_point": {
+          "y": 0.04031765,
+          "x": 0.02483541,
+          "z": 0.0
+         },
+         "curve": "JGN",
+         "end_point": {
+          "y": -0.01968235,
+          "x": 0.02483541,
+          "z": 0.0
+         }
+        },
+        {
+         "type": "Line3D",
+         "start_point": {
+          "y": -0.01968235,
+          "x": -0.05516459,
+          "z": 0.0
+         },
+         "curve": "JGF",
+         "end_point": {
+          "y": -0.01968235,
+          "x": 0.02483541,
+          "z": 0.0
+         }
+        },
+        {
+         "type": "Line3D",
+         "start_point": {
+          "y": 0.04031765,
+          "x": -0.05516459,
+          "z": 0.0
+         },
+         "curve": "JGJ",
+         "end_point": {
+          "y": -0.01968235,
+          "x": -0.05516459,
+          "z": 0.0
+         }
+        }
+       ]
+      },
+      {
+       "is_outer": true,
+       "profile_curves": [
+        {
+         "center_point": {
+          "y": 0.01031765,
+          "x": -0.02516459,
+          "z": 0.0
+         },
+         "type": "Circle3D",
+         "radius": 0.01,
+         "curve": "JGR",
+         "normal": {
+          "y": -1.0,
+          "x": 0.0,
+          "z": 0.0
+         }
+        }
+       ]
+      }
+     ],
+     "properties": {}
+    },
+    "JGG": {
+     "loops": [
+      {
+       "is_outer": true,
+       "profile_curves": [
+        {
+         "center_point": {
+          "y": 0.01031765,
+          "x": -0.02516459,
+          "z": 0.0
+         },
+         "type": "Circle3D",
+         "radius": 0.01,
+         "curve": "JGR",
+         "normal": {
+          "y": -1.0,
+          "x": 0.0,
+          "z": 0.0
+         }
+        }
+       ]
+      }
+     ],
+     "properties": {}
+    }
+   },
+   "reference_plane": {}
+  },
+  "FSeypmBJlxHrxt1_1": {
+   "name": "Extrude 2",
+   "type": "ExtrudeFeature",
+   "profiles": [
+    {
+     "profile": "JJC",
+     "sketch": "FxUIwRDqVzDpTa4_1"
+    }
+   ],
+   "extent_two": {
+    "distance": {
+     "type": "ModelParameter",
+     "role": "AgainstDistance",
+     "name": "none",
+     "value": 0.0
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "type": "ModelParameter",
+     "role": "Side2TaperAngle",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "extent_one": {
+    "distance": {
+     "type": "ModelParameter",
+     "role": "AlongDistance",
+     "name": "none",
+     "value": 0.0421
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "type": "ModelParameter",
+     "role": "TaperAngle",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "operation": "NewBodyFeatureOperation",
+   "start_extent": {
+    "type": "ProfilePlaneStartDefinition"
+   },
+   "extent_type": "OneSideFeatureExtentType"
+  },
+  "FBLJE9Bwar5BkNO_0": {
+   "name": "Extrude 1",
+   "type": "ExtrudeFeature",
+   "profiles": [
+    {
+     "profile": "JGC",
+     "sketch": "F9uPpvVqoX57y8v_0"
+    }
+   ],
+   "extent_two": {
+    "distance": {
+     "type": "ModelParameter",
+     "role": "AgainstDistance",
+     "name": "none",
+     "value": 0.0
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "type": "ModelParameter",
+     "role": "Side2TaperAngle",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "extent_one": {
+    "distance": {
+     "type": "ModelParameter",
+     "role": "AlongDistance",
+     "name": "none",
+     "value": 0.025
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "type": "ModelParameter",
+     "role": "TaperAngle",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "operation": "NewBodyFeatureOperation",
+   "start_extent": {
+    "type": "ProfilePlaneStartDefinition"
+   },
+   "extent_type": "OneSideFeatureExtentType"
+  }
+ },
+ "properties": {
+  "bounding_box": {
+   "max_point": {
+    "y": 0.0,
+    "x": 0.024835406862304173,
+    "z": 0.04031764782965183
+   },
+   "type": "BoundingBox3D",
+   "min_point": {
+    "y": -0.06709999999999999,
+    "x": -0.05516459313769583,
+    "z": -0.01968235217034816
+   }
+  }
+ },
+ "sequence": [
+  {
+   "index": 0,
+   "type": "Sketch",
+   "entity": "F9uPpvVqoX57y8v_0"
+  },
+  {
+   "index": 1,
+   "type": "ExtrudeFeature",
+   "entity": "FBLJE9Bwar5BkNO_0"
+  },
+  {
+   "index": 2,
+   "type": "Sketch",
+   "entity": "FxUIwRDqVzDpTa4_1"
+  },
+  {
+   "index": 3,
+   "type": "ExtrudeFeature",
+   "entity": "FSeypmBJlxHrxt1_1"
+  }
+ ]
+}
+
+这段 json 对应的建模步骤描述如下：
+
+1.以原点为相对原点，y 轴方向为绝对坐标 z 轴正方向，x 轴方向不变，z 轴方向为绝对坐标 y 轴的负方向，创建相对坐标系，以相对坐标 xy 平面为基准面创建草图 1。以相对坐标 (-0.05516459, 0.04031765, 0.0) 为起点，创建一个长、宽分别为 80mm、60mm 的长方形。以相对坐标 (-0.02516459,  0.01031765, 0.0) 为圆心创建一个半径为 10mm 的圆形。沿相对坐标 z 轴正方向拉伸草图 1 的图形 25mm，得到一个长、宽、高为 80mm、60mm、25mm 的长方体，且有一个 10mm 半径圆柱缺口。
+2.基于绝对坐标 (-0.01516459, -0.025, 0.01031765) 为新原点，y 轴以绝对坐标 z 正方向为方向，z 轴以绝对坐标 y 负向为正方向，x 轴方向不变创建新的相对坐标系。以新坐标系的原点为原点，xy 平面为基准面创建草图 2。以相对坐标 (-0.01, 0, 0) 为圆心，沿着相对坐标 y 轴负方向创建半径为 10mm 的圆形。基于草图 2 的圆形沿相对坐标 z 轴正方向拉伸 42.1mm，得到一个底面半径为 10mm，高 42.1mm 的圆柱体。
+
+
+例子 2:
+json 文件如下：
+
+{
+ "entities": {
+  "F9MMU2yPjc7yYRK": {
+   "name": "BlahBlah", 
+   "type": "ExtrudeFeature", 
+   "profiles": [
+    {
+     "profile": "JGC", 
+     "sketch": "FMQ5D4iuQAxchrX"
+    }
+   ], 
+   "extent_two": {
+    "distance": {
+     "type": "ModelParameter", 
+     "role": "AgainstDistance", 
+     "name": "none", 
+     "value": 0.0
+    }, 
+    "type": "DistanceExtentDefinition", 
+    "taper_angle": {
+     "type": "ModelParameter", 
+     "role": "Side2TaperAngle", 
+     "name": "none", 
+     "value": 0.0
+    }
+   }, 
+   "extent_one": {
+    "distance": {
+     "type": "ModelParameter", 
+     "role": "AlongDistance", 
+     "name": "none", 
+     "value": 0.025
+    }, 
+    "type": "DistanceExtentDefinition", 
+    "taper_angle": {
+     "type": "ModelParameter", 
+     "role": "TaperAngle", 
+     "name": "none", 
+     "value": 0.0
+    }
+   }, 
+   "operation": "NewBodyFeatureOperation", 
+   "start_extent": {
+    "type": "ProfilePlaneStartDefinition"
+   }, 
+   "extent_type": "OneSideFeatureExtentType"
+  }, 
+  "FMQ5D4iuQAxchrX": {
+   "transform": {
+    "origin": {
+     "y": 0.0, 
+     "x": 0.0, 
+     "z": 0.0
+    }, 
+    "y_axis": {
+     "y": 0.0, 
+     "x": 0.0, 
+     "z": 1.0
+    }, 
+    "x_axis": {
+     "y": 1.0, 
+     "x": 0.0, 
+     "z": 0.0
+    }, 
+    "z_axis": {
+     "y": 0.0, 
+     "x": 1.0, 
+     "z": 0.0
+    }
+   }, 
+   "type": "Sketch", 
+   "name": "Sketch 1", 
+   "profiles": {
+    "JGC": {
+     "loops": [
+      {
+       "is_outer": true, 
+       "profile_curves": [
+        {
+         "type": "Line3D", 
+         "start_point": {
+          "y": 0.02316366, 
+          "x": -0.03056175, 
+          "z": 0.0
+         }, 
+         "curve": "JGB", 
+         "end_point": {
+          "y": 0.02784884, 
+          "x": 0.02353013, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "type": "Line3D", 
+         "start_point": {
+          "y": 0.02784884, 
+          "x": 0.02353013, 
+          "z": 0.0
+         }, 
+         "curve": "JGN", 
+         "end_point": {
+          "y": -0.02644556, 
+          "x": 0.02353013, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "type": "Line3D", 
+         "start_point": {
+          "y": -0.02644556, 
+          "x": -0.03056175, 
+          "z": 0.0
+         }, 
+         "curve": "JGF", 
+         "end_point": {
+          "y": -0.02644556, 
+          "x": 0.02353013, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "type": "Line3D", 
+         "start_point": {
+          "y": 0.02316366, 
+          "x": -0.03056175, 
+          "z": 0.0
+         }, 
+         "curve": "JGJ", 
+         "end_point": {
+          "y": -0.02644556, 
+          "x": -0.03056175, 
+          "z": 0.0
+         }
+        }
+       ]
+      }
+     ], 
+     "properties": {}
+    }
+   }, 
+   "reference_plane": {}
+  }
+ }, 
+ "properties": {
+  "bounding_box": {
+   "max_point": {
+    "y": 0.023530125841498363, 
+    "x": 0.025, 
+    "z": 0.027848835137409704
+   }, 
+   "type": "BoundingBox3D", 
+   "min_point": {
+    "y": -0.030561745390295988, 
+    "x": 0.0, 
+    "z": -0.02644556038081646
+   }
+  }
+ }, 
+ "sequence": [
+  {
+   "index": 0, 
+   "type": "Sketch", 
+   "entity": "FMQ5D4iuQAxchrX"
+  }, 
+  {
+   "index": 1, 
+   "type": "ExtrudeFeature", 
+   "entity": "F9MMU2yPjc7yYRK"
+  }
+ ]
+}
+
+这段 json 对应生成的描述如下：
+以原点为相对原点，y 轴方向为绝对坐标 z 轴正方向，x 轴方向为绝对坐标 y 轴正方向，z 轴方向为绝对坐标 x 轴的正方向，创建相对坐标系。在此坐标系下，以相对坐标 xy 平面为基准面创建草图 1。在草图 1 上，以相对坐标 (-30.56175, 23.16366, 0.0) 为起点，创建一个上底边长 49.609mm，下底边长 54.294mm，腰长 54.294mm，高 54.092mm 的直角梯形。最后，沿着相对坐标 z 轴的正方向，拉伸草图 1 的图形 25mm，得到一个底面为上底、下底、高分别为 49.609mm、54.294mm、54.092mm 的直角梯形，高度为 25mm 的立体模型。
+
+
+注意：
+1. json 中数字的单位为米，描述时请转换为毫米
+2. 生成的回复直接给出描述，不要加上 '根据提供的 json 文件，这个 CAD 模型的建模需求描述如下：' 等类似开头
+3. 模型的底面模型不一定是按照我给的例子的样子，如果比价复杂请尽量推理，不要只参考给的例子中的形状
+请根据我的示例，给你新的 json 时生成新的建模步骤描述。

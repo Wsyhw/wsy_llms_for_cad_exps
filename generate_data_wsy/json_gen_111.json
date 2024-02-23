@@ -1,0 +1,53 @@
+{
+    "name": "Extrude 1",
+    "type": "ExtrudeFeature",
+    "profiles": [
+        {
+            "profile": "JGC",
+            "sketch": {
+                "transform": {"origin": {'y': -0.28769999, 'x': -0.000400000000000002, 'z': 0.0}, "y_axis": {'y': 0.0, 'x': -0.0, 'z': 1.0}, 'x_axis': {'y': 0.0, 'x': 1.0, 'z': 0.0}, 'z_axis': {'y': -1.0, 'x': 0.0, 'z': 0.0}},
+                "reference_plane": {},
+                "bounding_box": {'max_point': {'y': 0.0, 'x': 0.000400000000000002, 'z': 0.000400000000000002}, 'min_point': {'y': -0.2876999999999999, 'x': -0.000400000000000002, 'z': -0.000400000000000002}}
+            },
+            {
+                "profile": "JGG",
+                "sketch": {
+                    "transform": {"origin": {'y': -0.28769999, 'x': -0.000400000000000002, 'z': 0.0}, "y_axis": {'y': 0.0, 'x': -0.0, 'z': 1.0}, 'x_axis': {'y': 0.0, 'x': 1.0, 'z': 0.0}, 'z_axis': {'y': -1.0, 'x': 0.0, 'z': 0.0}},
+                    "reference_plane": {}
+                }
+            }],
+            "extent_two": {
+                "distance": {
+                    "role": "AgainstDistance",
+                    "type": "ModelParameter",
+                    "name": "none",
+                    "value": 0.0
+                },
+                "type": "OneSideFeatureExtentDefinition",
+                "taper_angle": {
+                    "role": "Side2TaperAngle",
+                    "type": "ModelParameter",
+                    "name": "none",
+                    "value": 0.0
+                },
+                "side": "FrontFeature"
+            },
+            "extent_one": {
+                "distance": {
+                    "role": "AlongDistance",
+                    "type": "ModelParameter",
+                    "name": "none",
+                    "value": 0.005
+                },
+                "type": "SymmetricFeatureExtentDefinition",
+                "taper_angle": {
+                    "role": "TaperAngle",
+                    "type": "ModelParameter",
+                    "name": "none",
+                    "value": 0.0
+                },
+                "side": "BackFeature"
+            }
+        }
+    ]}
+}
